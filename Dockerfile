@@ -8,7 +8,7 @@ RUN yum -y install yum-utils && yum update -y && yum clean all && rm -rf /var/ca
 #RUN yum install -y --setopt=tsflags=nodocs --enablerepo=centosplus epel-release && \
 #    rpmkeys --import file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7 && \
 #    yum install -y --setopt=tsflags=nodocs install java-1.8.0-openjdk-headless nss_wrapper && \
-    yum clean all && \
+#    yum clean all && \
 #    mkdir -p /opt/app-root/jenkins && \
 #    chown -R 1001:0 /opt/app-root/jenkins && \
 #    chmod -R g+w /opt/app-root/jenkins
