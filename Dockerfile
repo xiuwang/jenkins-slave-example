@@ -2,6 +2,7 @@
 #FROM openshift/base-centos7
 FROM  brew-pulp-docker01.web.prod.ext.phx2.redhat.com:8888/openshift3/jenkins-slave-base-rhel7:v3.11
 USER root
+RUN rpm -qa | grep subsc
 RUN yum -y install yum-utils && yum update -y && yum clean all && rm -rf /var/cache/yum
 # Install headless Java
 #USER root
